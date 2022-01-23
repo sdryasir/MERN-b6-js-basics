@@ -9,58 +9,102 @@
 </head>
 
 <body>
-    <header class="header">
-
-    </header>
-
-    <main class="main">
-        <section class="primary">
-
-        </section>
-
-        <section class="features">
-
-        </section>
-    </main>
+    <!-- <input type="text" id="num1">
+    <input type="text" id="num2"> -->
 
 
-    <footer class="footer">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nemo temporibus adipisci eaque
-            dignissimos ullam harum repudiandae, neque placeat error qui quas, nam vitae modi laborum praesentium
-            inventore iste ducimus.</p>
-    </footer>
+    <button id="btn1">Add</button>
+    <button id="btn2">Add</button>
+    <button id="btn3">Add</button>
+    <button id="btn4">Add</button>
+    <button id="btn5">Add</button>
 
 
     <script>
 
 
-        let person = {
-            name: "yasir Ali",
-            age: 58,
-            class: "MCS",
-            meritalStatus: true,
-            cnstact: '03356987456',
-            display: function () {
-                console.log('From inside the object...')
+        document.getElementById('btn5').addEventListener('click', function () {
+            console.log("Hello...")
+        })
+
+
+        function add(a, b) { //callee
+            console.log(a + b)
+        }
+
+        function login(user, pass) {
+            if (user === 'yasir' && pass === '123456') {
+                return true
+            } else {
+                return false
             }
         }
 
 
-        console.log(person.display())
 
 
 
-        // let marks = [];
 
-        // marks.push(45, 25, 47, 59, 23)
 
-        // if (marks.length < 1) {
-        //     alert("No Record Found....")
-        // } else {
-        //     for (let i = 0; i < marks.length; i++) {
-        //         console.log(marks[i])
-        //     }
-        // }
+
+
+
+        let persons = [
+            {
+                name: "Yasir Ali",
+                age: 58,
+                class: "MCS",
+                meritalStatus: true,
+                cnstact: '03356987456'
+            },
+            {
+                name: "Ashba",
+                age: 23,
+                class: "BS",
+                meritalStatus: false,
+                cnstact: '03355687456'
+            },
+            {
+                name: "Faraz",
+                age: 22,
+                class: "BS",
+                meritalStatus: false,
+                cnstact: '03355687456'
+            },
+            {
+                name: "Shahid Bin Shafiq",
+                age: 22,
+                class: "MS",
+                meritalStatus: true,
+                cnstact: '03355687456'
+            },
+            {
+                name: "Obaid",
+                age: 25,
+                class: "MS",
+                meritalStatus: false,
+                cnstact: '03355687456'
+            },
+            {
+                name: "Jazib",
+                age: 34,
+                class: "BS",
+                meritalStatus: true,
+                cnstact: '03355687456'
+            },
+            {
+                name: "Junaid Fareed",
+                age: 25,
+                class: "BS",
+                meritalStatus: false,
+                cnstact: '03355687456'
+            },
+        ]
+
+
+
+
+
 
 
 
@@ -71,6 +115,10 @@
         //1 - array is an object in JavaScript
         //2 - Array (Objects) can have two things associated with it, methods and properties
         //3 - difference between function and methods
+        //4 - type inference
+        //5 - mutation
+        //6 - anonymous function
+        //7 - Hoisting
 
     </script>
 
